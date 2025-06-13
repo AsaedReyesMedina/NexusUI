@@ -1,0 +1,80 @@
+{
+  "id": "NexusUI",
+  "name": "NexusUI",
+  "metaData": {
+    "name": "NexusUI",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "0.0.0",
+      "buildName": "NexusUI"
+    },
+    "remoteEntry": {
+      "name": "NexusUI.js",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "@mf-types.zip",
+      "api": "@mf-types.d.ts"
+    },
+    "globalName": "NexusUI",
+    "pluginVersion": "0.15.0",
+    "prefetchInterface": false,
+    "publicPath": "http://localhost:3001/"
+  },
+  "shared": [
+    {
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "shareScope": "default",
+      "name": "react",
+      "version": "16.9.0",
+      "eager": false,
+      "id": "NexusUI:react",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "vendors-node_modules_pnpm_react_18_3_1_node_modules_react_index_js.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [
+        "."
+      ]
+    }
+  ],
+  "remotes": [],
+  "exposes": [
+    {
+      "path": ".",
+      "id": "NexusUI:.",
+      "name": ".",
+      "requires": [
+        "react"
+      ],
+      "file": "src/index.tsx",
+      "assets": {
+        "js": {
+          "sync": [
+            "vendors-node_modules_pnpm_rspack_core_1_3_15__swc_helpers_0_5_17_node_modules_rspack_core_dis-48b3d2.js",
+            "__federation_expose_default_export.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [
+            "__federation_expose_default_export.css"
+          ],
+          "async": []
+        }
+      }
+    }
+  ]
+}
