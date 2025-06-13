@@ -125,5 +125,5 @@ Si tienes alguna pregunta o necesitas ayuda, por favor abre un issue en el repos
 
 ---
 
-Desarrollado con ❤️ por [Tu Nombre/Organización]
+Desarrollado con ❤️ por AsaedRM
 
