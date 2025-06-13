@@ -1,25 +1,26 @@
-import { AccordionProps } from "../Accordion.interface"
+import { AccordionItemProps, AccordionProps, AccordionTriggerProps } from "../Accordion.interface"
+import { AccordionContentProps } from "../Accordion.interface"
 import { ChevronDown } from 'lucide-react';
 
 
-export const AccordionItem = ({ children, ...props }: AccordionProps) => {
+export const AccordionItem = ({ children, ...props }: AccordionItemProps) => {
     return (
-        <div {...props}>
+        <div className={`${props.className} flex flex-col gap-1`} {...props}>
             {children}
         </div>
     )
 }
-export const AccordionTrigger = ({ children, ...props }: AccordionProps) => {
+export const AccordionTrigger = ({ children, withIcon = true, ...props }: AccordionTriggerProps) => {
     return (
-        <div className={`${props.className} flex flex-row justify-between items-center`} {...props}>
+        <div className={`${props.className} flex flex-row justify-between items-center gap-2`} {...props}>
             {children}
-            <ChevronDown className="w-4 h-4" />
+            {withIcon && <ChevronDown className="w-4 h-4" />}
         </div>
     )
 }
-export const AccordionContent = ({ children, ...props }: AccordionProps) => {
+export const AccordionContent = ({ children, ...props }: AccordionContentProps) => {
     return (
-        <div {...props}>
+        <div className={`${props.className} flex flex-col gap-1`} {...props}>
             {children}
         </div>
     )
